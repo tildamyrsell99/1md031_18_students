@@ -1,4 +1,3 @@
-@import url("reset.css");
 @import 'https://fonts.googleapis.com/css?family=Pacifico|Dosis';
 
 body {
@@ -14,21 +13,23 @@ a, strong, em {
 .burger {
 	color: white;
 	background-color: rgb(32, 30, 30);
-	border: 2px dotted black border-bottom: none;
+	border: 2px dotted black;
 	display: grid;
 	grid-gap: 10px;
 	grid-template-columns: 1fr 1fr 1fr;
 }
 .checkout {
-	color: black);
+	color: black;
 	background-color: white;
 	border: 2px dotted black;
 }
-/* Knapp */
+
+/* Knapp*/
 button {
+	width: 150px;
 	margin: 30px 200px;
 }
-/* Färg på knapp */
+/* Färg på baksidan av knapp*/
 button:hover{
 	background-color: rgb(10, 173, 10)
 }
@@ -49,9 +50,10 @@ header{
 	background-size: 100%;
 }
 #headerbackground {
-	opacity:0.8;
+	opacity:0.6;
 	width: 1370px;
 }
+/*Boxar
 .A {
 	grid-column: 1/span 3;
 }
@@ -66,4 +68,16 @@ header{
 .D {
 	grid-column: 3;
 	grid-row:2;
+}*/
+.allburgers {
+	display : grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.item {
+	display : inline-block;
+	width :90%;
+}
+/* Storlek på hamburgare*/
+img {
+	width: 85%;
 }
